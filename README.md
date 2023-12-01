@@ -69,3 +69,10 @@
 #### Models, que será onde teremos cada uma das nossas imagens que serão tratadas
 
 #### E por fim, um diretorio final, para armazenamento das novas imagens e analises.
+
+### 2.3 index.ipynb
+
+### 2.3.1 Incluindo bibliotecas
+
+#### Inicialmente é realizada a inclusão das bibliotecas necessarias. Deve-se também, já compilar a célula, para ver se há algum erro de compilação. No meu caso, utilizando a IDE Visual Studio Code, eu tive que instalar algumas dependencias do kernel jupyter para que compilasse o ambiente virtual.
+
