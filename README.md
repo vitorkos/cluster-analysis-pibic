@@ -62,4 +62,10 @@
 
 ### 2.2 Estruturação do projeto
  
-####
+#### O projeto, a grosso modo, é dividido em .venv, o arquivo do ambiente virtual que estamos. Não iremos mudar, mexer ou alterar muitas coisas nessa diretorio, sendo praticamente 100% usando só para instalação, gerenciamente e ativação do ambiento e dependencias. 
+
+#### Src é o source, onde teremos nosso código, ou se necessário, codigos.
+
+#### Models, que será onde teremos cada uma das nossas imagens que serão tratadas
+
+#### E por fim, um diretorio final, para armazenamento das novas imagens e analises.
