@@ -35,11 +35,12 @@ for exp_dir in os.listdir(models_path):
                                               10)
 
                 # Plot results
-                fig, ax = plt.subplots(1, 2, figsize=(12, 5))
-                ax[0].imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-                ax[1].imshow(cv2.cvtColor(mask, cv2.COLOR_BGR2RGB))
-                plt.tight_layout()
+                
 
+                ax = plt.subplots(1, figsize=(12,5))
+                ax[1].imshow(cv2.cvtColor(mask, cv2.COLOR_BGR2RGB))
+                ax[1].axis('off')
+                plt.tight_layout()
                 # Save the plotted image
                 bin_image_path = os.path.join(exp_path, f'{img_file[:-4]}_bin.jpg')
                 plt.savefig(bin_image_path, bbox_inches='tight', pad_inches=0)
