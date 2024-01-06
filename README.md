@@ -1,19 +1,43 @@
+<center>
+
 # PIBIC - AVALIAÇÕES DAS PROPRIEDADES FÍSICAS DA MASSA E DE PÃES ELABORADOS COM ADIÇÃO DE FARINHAS DE BIOMASSA DE BANANA E DE SOJA
 
-### Grande área de conhecimento: Ciências Exatas e dda Terra
+</center>
 
-### Subárea do conhecimento: Química
+## Grande área de conhecimento: Ciências Exatas e dda Terra
 
-### Orientado: Vitor Kauã Oliveira de Souza, Segundo ano de Ciência da Computação, Universidade Estadual do Norte do Paraná
+## Subárea do conhecimento: Química
 
-### Orientador: Professor Doutor Luís Guilherme Sachs
+## Orientado: Vitor Kauã Oliveira de Souza, Segundo ano de Ciência da Computação, Universidade Estadual do Norte do Paraná
 
-### 11,30,2023
+## Orientador: Professor Doutor Luís Guilherme Sachs
+
+## 11,30,2023
 ---
 
 ## Documentação 
 
-#### O seguinte arquivo se trata da documentação da implementação de um analizador de cluster de imagens de fatias de pães.
+#### O seguinte arquivo se trata da documentação da implementação e execução de um analizador de cluster de imagens de fatias de pães.
+
+---
+<center>
+
+## Índice
+
+</center>
+
+<font size="4" color="black">
+
+1. Introdução
+2. Objetivo
+3. Processo
+    1. Passo 1
+    2. Passo 2
+4. Conclusão
+5. Referencias
+
+</font>
+
 
 ### 1. As imagens
 
