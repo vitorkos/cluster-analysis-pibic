@@ -90,10 +90,9 @@ Com a obtenção dessas 30 amostras, duas por experimento, a face das fatias sã
 
 <center>
 
-![Scan](/home/geedorah/Code/cluster-analysis-pibic/resources/default-photos/aline_exp_img1.jpg)
+![Scan](./resources/aline_exp_img1.png)
 
 </center>
-
 
 ### 1. As imagens
 
