@@ -17,7 +17,7 @@
 
 ## Documentação 
 
-#### O seguinte arquivo se trata da documentação da implementação e execução de um analizador de cluster de imagens de fatias de pães.
+O seguinte arquivo se trata da documentação da implementação e execução de um analizador de cluster de imagens de fatias de pães.
 
 ---
 <center>
@@ -47,6 +47,21 @@
 7. Referencias
 
 </font>
+
+---
+
+### 1. Introdução
+
+Esse documento se trata de uma documentação referente ao software desenvolvido para o PIBIC "AVALIAÇÕES DAS PROPRIEDADES FÍSICAS DA MASSA E DE PÃES ELABORADOS COM ADIÇÃO DE FARINHAS DE BIOMASSA DE BANANA E DE SOJA".
+
+O PIBIC busca a realização de experimentos, no caso pães, onde cada experimento possuem 3 variáveis, as quais os valores de cada uma podem variar entre um valor mínimo, médio e máximo cada um.
+
+Após a realização dos experimentos, é realizada a analise química e após a análise química e feita a analise gráfica, computacional, dos experimentos utilizando o software desenvolvimento.
+
+O software desenvolvido pretende realizar a análise gráfica computacional analisando a imagem obtida de cada um. Ele procura analisar os agrupamentos de ar presentes nos experimentos para dessa forma termos a qualidade deles.
+
+
+
 
 
 ### 1. As imagens
