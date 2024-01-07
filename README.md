@@ -4,20 +4,24 @@
 
 </center>
 
-## Grande área de conhecimento: Ciências Exatas e da Terra
+### Grande área de conhecimento: Ciências Exatas e da Terra
 
-## Subárea do conhecimento: Química
+### Subárea do conhecimento: Química
 
-## Orientado: Vitor Kauã Oliveira de Souza, Segundo ano de Ciência da Computação, Universidade Estadual do Norte do Paraná
+### Orientado: Vitor Kauã Oliveira de Souza, Segundo ano de Ciência da Computação, Universidade Estadual do Norte do Paraná
 
-## Orientador: Professor Doutor Luís Guilherme Sachs
+### Orientador: Professor Doutor Luís Guilherme Sachs
 
-## 11,30,2023
+### 11,30,2023
 ---
 
 ## Documentação 
 
 O seguinte arquivo se trata da documentação da implementação e execução de um analizador de cluster de imagens de fatias de pães.
+
+Ele não pretende substituir o documento original da Proposta da Iniciação Científica e sim ser um complemento ao software desenvolvido.
+
+Ele busca, além da documentação do software, introduzir minimamente o projeto como um todo.
 
 ---
 <center>
@@ -59,6 +63,8 @@ O PIBIC busca a realização de experimentos, no caso pães, onde cada experimen
 Após a realização dos experimentos, é realizada a analise química e após a análise química e feita a analise gráfica, computacional, dos experimentos utilizando o software desenvolvimento.
 
 O software desenvolvido pretende realizar a análise gráfica computacional analisando a imagem obtida de cada um. Ele procura analisar os agrupamentos de ar presentes nos experimentos para dessa forma termos a qualidade deles.
+
+### 2. Objetivo
 
 
 
