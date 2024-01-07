@@ -94,6 +94,16 @@ Com a obtenção dessas 30 amostras, duas por experimento, a face das fatias sã
 
 </center>
 
+Uma vez com essa imagem, que possui as faces das fatias dos experimentos que cabem no scan, é realizado o recorte individual de cada imagem.
+
+<center>
+
+![Scan](./models/aline_models/exp1/1_1.jpg)
+
+</center>
+
+Com o recorte individual de cada experimento scaneado, é possivel utilizar essas imagens para análise.
+
 ### 1. As imagens
 
  As imagens para analise foram obtidas a partir da elaboração de pães e após a sua realização, uma fatia vertical é feita.
