@@ -4,7 +4,7 @@
 
 </center>
 
-## Grande área de conhecimento: Ciências Exatas e dda Terra
+## Grande área de conhecimento: Ciências Exatas e da Terra
 
 ## Subárea do conhecimento: Química
 
@@ -30,18 +30,28 @@
 
 1. Introdução
 2. Objetivo
-3. Processo
-    1. Passo 1
-    2. Passo 2
-4. Conclusão
-5. Referencias
+3. Pre-análise
+    1. Desenvolvimento dos experimentos
+    2. Obtenção das imagens
+4. Pre-desenvolvimento
+    1. Linguagem
+    2. Pre-requisitos
+        1. Ambiente virtual
+        2. Dependencias
+5. Desenvolvimento
+    1. Estrutura do projeto
+        1. Diretórios
+    2. Main.ipynb
+    3. Auto.py
+6. Conclusão
+7. Referencias
 
 </font>
 
 
 ### 1. As imagens
 
-#### As imagens para analise foram obtidas a partir da elaboração de pães e após a sua realização, uma fatia vertical é feita.
+ As imagens para analise foram obtidas a partir da elaboração de pães e após a sua realização, uma fatia vertical é feita.
 
 #### As faces das duas partes do pão cortado são escaneadas.
 
