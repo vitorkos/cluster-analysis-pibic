@@ -43,9 +43,9 @@ Ele busca, além da documentação do software, introduzir minimamente o projeto
     3. Dependencias
 5. Desenvolvimento
     1. Estrutura do projeto
-        1. Diretórios
-    2. Main.ipynb
-    3. Auto.py
+    2. Diretórios
+    3. Main.ipynb
+    4. Auto.py
 6. Conclusão
 7. Referencias
 
@@ -131,6 +131,47 @@ O venv utiliza o instalador pip para instalação e desinstalação de pacotes e
 #### 4.3 Dependencias
 
 Uma vez com o diretório raiz do projeto criado e dentro dele, um ambiente virtual ter sido criado e iniciado, funcionando perfeitamente, é necessario a instalação das dependencias que serão utilizadas. E são elas matplotlib, numpy e opencv-python.
+
+### 5. Desenvolvimento
+
+O desenvolvimento do projeto é a etapa principal, onde há o armazenamento das imagens que serão analizadas, onde são realizadas as analizes e onde serão salvas as mesmas.
+
+#### 5.1 Estrutura do projeto
+
+A estrutura do projeto é a forma que ele está estruturado propriamente dito dentro do diretório raiz.
+
+<center>
+
+![Estrutura](./resources/2024-01-07_18-21.png)
+
+</center>
+
+#### 5.2 Diretórios
+
+Os diretorios ou pastas do projeto organizam e estruturam o mesmo, onde cada um possui sua própria função
+
+- Models
+
+O diretório Models, como o próprio nome remete, possui os modelos que serão analisados. Dentro dele há três outros diretórios que possuem os experimentos dos três participantes envolvidos no PIBIC. Cada diretório, por sua vez, possui outros que armazenam os dados de cada experimento. 
+
+Por exemplo, a pasta exp1 dentro de aline_models, tem as duas fatias do experimento 1 e todos os dados resultantes da analise das duas fatias. Isso tudo, do experimento da Aline.
+
+- Resources
+
+O diretório Resources tem a função de armazenar recursos a serem utilizados ou que já foram utilizados como imagens e outros.
+
+- Src
+
+Src ou source se trata do diretório que possui o código-fonte do nosso projeto. Nesse caso, o source possui dois códigos: um desenvolvido inicialmente com extensão .ipynb, o principal, que utiliza a ferramenta de desenvolvimento Jupyter Notebook e um segundo, auto.py, que se trata do mesmo código em Python puro, que foi desenvolvido para a execução automática da análise de todos os modelos de um conjunto de experimentos
+
+- Tests
+
+Diretório usado na fase extremamente inicial do projeto, para testar questões basicas da análise da imagem, retorno de outra imagem e formas de salvar novas.
+
+- Venv
+
+Diretório onde está o ambiente virtual do projeto, com todas bibliotecas e dependencias.
+
 
 ### 1. As imagens
 
