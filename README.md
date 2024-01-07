@@ -39,9 +39,8 @@ Ele busca, além da documentação do software, introduzir minimamente o projeto
     2. Obtenção das imagens
 4. Pre-desenvolvimento
     1. Linguagem
-    2. Pre-requisitos
-        1. Ambiente virtual
-        2. Dependencias
+    2. Ambiente virtual
+    3. Dependencias
 5. Desenvolvimento
     1. Estrutura do projeto
         1. Diretórios
@@ -103,6 +102,35 @@ Uma vez com essa imagem, que possui as faces das fatias dos experimentos que cab
 </center>
 
 Com o recorte individual de cada experimento scaneado, é possivel utilizar essas imagens para análise.
+
+### 4. Pre-desenvolvimento
+
+A etapa de pre-desenvolvimento já passa a envolver e introduzir as tecnologias que irão ser utilizadas no desenvolvimento do software.
+
+Vale destacar que, a documentação, principalmente as etapas de pré-desenvolvimento e desenvolvimento, não pretende ensinar e instruir do zero a utilizar da linguagem de programação Python, tanto em sintaxe tanto em desenvolvimento, instalar e ativar o ambiente virtual venv e executar o software propriamente dito.
+
+A documentação pretende instruir minimamente, direcionando e explicando as etapas do desenvolvimento, assim como o pré e pós. Espera-se um minimo conhecimento em Python e ambientes virtuais para caso necessario, uma mudança no código.
+
+
+#### 4.1 Linguagem
+
+A linguagem escolhida e utilizada para o desenvolvimento do software foi Python. O peso para a escolha foi a facilidade que Python apresenta para a realização de trabalhos envolvendo análise de imagens e computação gráfica.
+
+Além disso, Python possui uma facilidade quanto a sintaxe da linguagem, permitindo aqueles que não possuem familiaridade com linguagens de programação, o seu uso.
+
+#### 4.2 Ambiente virtual
+
+Quando utilizamos Python como ferramenta, devemos nos familiarizar e utilizar uma ferramenta inclusa na linguagem chamada ambiente virtual.
+
+Os ambientes virtuais são ferramentas para gerenciar as dependencias e bibliotecas do seu projeto, permitindo a instalação, atualização e desinstalação das mesmas. 
+
+Na Python existem alguns ambientes virtuais mas para uma utilização leve, fácil e rápida de Python, será utilizado o ambiente virtual que já vem no Python quando instalado na sua máquina, o venv.
+
+O venv utiliza o instalador pip para instalação e desinstalação de pacotes e bibliotecas.
+
+#### 4.3 Dependencias
+
+Uma vez com o diretório raiz do projeto criado e dentro dele, um ambiente virtual ter sido criado e iniciado, funcionando perfeitamente, é necessario a instalação das dependencias que serão utilizadas. E são elas matplotlib, numpy e opencv-python.
 
 ### 1. As imagens
 
