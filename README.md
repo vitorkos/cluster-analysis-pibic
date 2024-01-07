@@ -66,8 +66,9 @@ O software desenvolvido pretende realizar a análise gráfica computacional anal
 
 ### 2. Objetivo
 
+O objetivo geral do projeto é o desenvolvimento de pães com substituição de trigo por biomassa de banana verde e soja. O objetivo específico procura aproveitar de bananas fora dos padrões de comercialização na elaboração de pães ricos em probióticos. Além disso, avaliar as propriedades físico-químicas dos pães elaborados.
 
-
+O objetivo geral do software desenvolvido busca a análise gráfica das imagens. Quanto ao objetivo específico do software é a análise dos clusters, os agrupamentos de ar presentes dos pães, através da análise computacional das fatias dos pães, buscando dados como quantidade de clusters, maior e menor cluster e o tamanho de cada cluster presente.
 
 
 ### 1. As imagens
