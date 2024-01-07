@@ -30,7 +30,7 @@ Ele busca, além da documentação do software, introduzir minimamente o projeto
 
 </center>
 
-<font size="4" color="black">
+<font color="black">
 
 1. Introdução
 2. Objetivo
@@ -76,12 +76,23 @@ A etapa "Pre-análise" trata de todas as etapas do projeto anteriores ao desenvo
 
 #### 3.1 Desenvolvimento dos experimentos
 
-Os experimentos desenvolvidos, como já dito, se tratam de pães, onde cada experimento possui três ingredientes que compoẽm a formulação, os quais variam em três valores cada ingrediente.
+Os experimentos, como já dito, se tratam do desenvolvimento de 15 pães, onde cada experimento possui três ingredientes que compoẽm a formulação, os quais variam em três valores cada ingrediente.
 
-O desenvolvimento dos experimentos é desenvolvido em laboratório com todos os ingredientes devidamente pesados e medidos. Primeiramente é medido todos os ingredientes secos de um experimento e esses, são armazenados juntos em um recipiente ou envolocro.
+São desenvolvido em laboratório com todos os ingredientes devidamente pesados e medidos. Primeiramente é medido todos os ingredientes secos de um experimento e esses, são armazenados juntos em um recipiente ou envolocro.
 
 Após os ingredientes de todos os experimentos serem medidos e armazenados, os experimentos são propriamente desenvolvidos, também seguindo metodologias rígidas.
 
+#### 3.2 Obtenção das imagens
+
+Após a realização dos experimentos e análise físico-química deles, é realizado um corte vertical em cada experimento, resultando então em 30 fatias de pães desenvolvidos, duas fatias de cada experimento.
+
+Com a obtenção dessas 30 amostras, duas por experimento, a face das fatias são colocadas sobre um scanner, limitadas pela quantidade de fatias que cabem no scan. Uma vez as faces das fatias no scan, elas são scaneadas, nos fornecendo uma imagem com as faces dos pães scaneados
+
+<center>
+
+![Scan](/home/geedorah/Code/cluster-analysis-pibic/resources/default-photos/aline_exp_img1.jpg)
+
+</center>
 
 
 ### 1. As imagens
