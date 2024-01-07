@@ -70,6 +70,19 @@ O objetivo geral do projeto é o desenvolvimento de pães com substituição de 
 
 O objetivo geral do software desenvolvido busca a análise gráfica das imagens. Quanto ao objetivo específico do software é a análise dos clusters, os agrupamentos de ar presentes dos pães, através da análise computacional das fatias dos pães, buscando dados como quantidade de clusters, maior e menor cluster e o tamanho de cada cluster presente.
 
+### 3. Pre-análise
+
+A etapa "Pre-análise" trata de todas as etapas do projeto anteriores ao desenvolvimento e uso do software, envolvendo de forma principal a elaboração dos experimentos e a obtenção das imagens dos experimentos.
+
+#### 3.1 Desenvolvimento dos experimentos
+
+Os experimentos desenvolvidos, como já dito, se tratam de pães, onde cada experimento possui três ingredientes que compoẽm a formulação, os quais variam em três valores cada ingrediente.
+
+O desenvolvimento dos experimentos é desenvolvido em laboratório com todos os ingredientes devidamente pesados e medidos. Primeiramente é medido todos os ingredientes secos de um experimento e esses, são armazenados juntos em um recipiente ou envolocro.
+
+Após os ingredientes de todos os experimentos serem medidos e armazenados, os experimentos são propriamente desenvolvidos, também seguindo metodologias rígidas.
+
+
 
 ### 1. As imagens
 
