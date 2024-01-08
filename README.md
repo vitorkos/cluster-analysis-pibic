@@ -308,3 +308,19 @@ A imagem plotada é salva
     plt.savefig('./../models/aline_models/exp1/1_1_bin_contours.jpg', bbox_inches='tight', pad_inches=0)
     plt.show()
 
+#### 5.4 Auto.py
+
+O código auto.py trata-se do código já criado anteriormente, main.ipynb, porem em Python puro, permitindo a automatização das análises.
+
+O código propriamente dito possui algumas mudanças estruturais que fazem a leitura do diretório com os modelos, percorre cada imagem de cada experimento e salva as informações obtidas das análises em cada um automaticamente.
+
+A grosso modo, ele é executado da seguinte forma seguindo os seguintes passos:
+
+    Inicialização do ambiente virtual : source venv/bin/activate
+    Execução do arquivo : python auto.py
+
+### Conclusão
+
+
+
+### Referencias
