@@ -172,6 +172,143 @@ Diretório usado na fase extremamente inicial do projeto, para testar questões 
 
 Diretório onde está o ambiente virtual do projeto, com todas bibliotecas e dependencias.
 
+#### 5.3 Main.ipynb
+
+O arquivo chamado 'main.ipynb' se trata do 'cluster_analysis_pibic.ipynb' mas a fim de tornar prática a sua menção na documentação, será chamado de main.ipynb.
+
+- Extensão
+
+Inicialmente, o arquivo possui extensão .ipynb, que se trata da extensao utilizada pelo ambiente de desenvolvimento Jupyter Notebook, que divide de forma estratégica o código em células, que podem ser executadas individualmente, sem ter a necessidade de compilar o código inteiro para testar um único feature.
+
+A utilização de células permite a explicação do código por células.
+
+- 1º célula
+
+Tem como objetivo passar o caminho explicito de onde estão as dependencias, modulos e bibliotecas que serão utilizadas no projeto.
+
+    import os
+    os.sys.path
+    import sys
+    path_to_module = "../venv/lib/python3.11/site-packages/"
+    sys.path.append(path_to_module)
+
+
+
+Nesse caso, o código referencia o diretório do ambiente virtual onde estão os pacotes.
+
+- 2º célula
+
+Importa todas as bibliotecas que serão utilizadas para o nosso arquivo propriamente dito. Apesar de estarem instaladas no venv, nós temos que importa-las em nosso código para fazer as suas utilizações.
+
+    import cv2
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import csv
+
+- 3º célula
+
+Provavelmente a célula mais importante do código.
+
+Na primeira linha é passado o caminho para a imagem a ser analisada por essa célula. Na segunda, a imagem é convertida para escalas de cinza e a terceira aplica um "blurr" na imagem, responsável por reduzir ruídos e dados desnecessários na imagem.
+
+    img = cv2.imread('./../models/aline_models/exp1/1_1.jpg')
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    blurred = cv2.GaussianBlur(gray, (7, 7), 0)
+
+A próxima estrutura é a criação de uma máscara para a imagem. Define uma variável que recebe a função que aplica um "trichute" adaptativo na imagem em escala de cinza com "blurr" aplicado a ela. Neste caso, cv2.ADAPTIVE_THRESH_MEAN_C indica que o limiar é calculado como a média dos valores dos pixels na vizinhança especificada. cv2.THRESH_BINARY indica que os pixels com intensidades acima do limiar serão definidos como 255 (branco), enquanto os pixels abaixo do limiar serão definidos como 0 (preto). Os parâmetros 31 e 10 definem o tamanho da vizinhança usada para calcular o limiar adaptativo.
+
+    mask = cv2.adaptiveThreshold(blurred,
+                                  255,
+                                  cv2.ADAPTIVE_THRESH_MEAN_C,
+                                  cv2.THRESH_BINARY,
+                                  31,
+                                  10)
+
+A estrutura final da célula plota a imagem original e a imagem com a mascara aplicada.
+
+<center>
+
+![Plot](./resources/plot.png)
+
+</center>
+
+
+- 4º célula
+
+Tem como objetivo plotar individualmente a imagem binarizada, com a máscara aplicada, para salva-la e reutiliza-la.
+
+![Plot](./models/aline_models/exp1/1_1_bin.jpg)
+
+- 5º/ 6º célula
+
+Conta o número de pixeis brancos e pretos (desnecessário)
+
+    img = cv2.imread("./../models/aline_models/exp1/1_1_bin.jpg") 
+    
+    number_of_white_pix = np.sum(img == 255) 
+    number_of_black_pix = np.sum(img == 0) 
+      
+    print('Number of white pixels:', number_of_white_pix) 
+    print('Number of black pixels:', number_of_black_pix)
+
+- 7º célula
+
+Segunda célula mais importante do código. Conta e mede o número e tamanho dos clusters da imagem binarizada.
+
+As duas primeiras linhas definem uma lista vazia e passam o caminho da imagem a ser analisada
+
+    areas =[]
+    csv_file_path = './../models/aline_models/exp1/cluster_data_1_1.csv'
+
+O próximo conjunto de linhas converte a imagem em escala de cinza (já está em preto e branco), aplica a binarização (já está binarizada), encontra os contornos da imagem e armazena em contours e define uma variável contadora para ter o numero de clusters (sujeito a refatoração)
+
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    ret,thresh = cv2.threshold(gray,127,255,1)
+    contours,h = cv2.findContours(thresh,1,2)
+    counter = 0
+
+A próxima estrutura se trata de um laço de repetição que irá percorrer pelos contornos, salvos na lista contours. A cada iteração, ele desenha o contorno do mesmo, incrementa 1 no contador, calcula a área daquele contorno e adiciona o valor na lista areas.
+
+    for cnt in contours:
+        cv2.drawContours(img,[cnt],0,(0,0,255),1)
+        counter = counter + 1
+        
+        # Calculate the area (number of pixels) for each contour
+        area = cv2.contourArea(cnt)
+        areas.append(area)
+
+Ordena a lista areas.
+
+    areas.sort()
+
+A próxima estrutura cria um documento .csv para armazenar todas as informações de todos os clusters. Numero total de clusters e o valor individual da área de cada cluster.
+
+    with open(csv_file_path, 'w', newline='') as csv_file:
+        csv_writer = csv.writer(csv_file)
+        csv_writer.writerow(['Exp1_1', 'Number of Total Clusters'])
+        csv_writer.writerow([counter])
+    
+        for i, area in enumerate(areas, start=1):
+            csv_writer.writerow([f'Area of Cluster{i}', area])
+
+A imagem contornada é plotada
+
+    plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+    plt.axis('off')  # Turn off axis labels and ticks
+    plt.tight_layout()
+
+<center>
+
+![Plot](./models/aline_models/exp1/1_1_bin_contours.jpg)
+
+</center>
+
+A imagem plotada é salva
+
+    plt.savefig('./../models/aline_models/exp1/1_1_bin_contours.jpg', bbox_inches='tight', pad_inches=0)
+    plt.show()
+
+
 
 ### 1. As imagens
 
