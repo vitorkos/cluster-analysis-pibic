@@ -40,7 +40,6 @@ Ele busca, além da documentação do software, introduzir minimamente o projeto
 4. Pre-desenvolvimento
     1. Linguagem
     2. Ambiente virtual
-    3. Dependencias
 5. Desenvolvimento
     1. Estrutura do projeto
     2. Diretórios
@@ -128,9 +127,11 @@ Na Python existem alguns ambientes virtuais mas para uma utilização leve, fác
 
 O venv utiliza o instalador pip para instalação e desinstalação de pacotes e bibliotecas.
 
-#### 4.3 Dependencias
+No caso, o arquivo requirements.txt possui todas as dependencias utilizadas.
 
-Uma vez com o diretório raiz do projeto criado e dentro dele, um ambiente virtual ter sido criado e iniciado, funcionando perfeitamente, é necessario a instalação das dependencias que serão utilizadas. E são elas matplotlib, numpy e opencv-python.
+Para a instalação no seu ambiente virtual, com o mesmo ativado, execute no terminal:
+
+    pip install -r requirements.txt
 
 ### 5. Desenvolvimento
 
@@ -313,11 +314,6 @@ A imagem plotada é salva
 O código auto.py trata-se do código já criado anteriormente, main.ipynb, porem em Python puro, permitindo a automatização das análises.
 
 O código propriamente dito possui algumas mudanças estruturais que fazem a leitura do diretório com os modelos, percorre cada imagem de cada experimento e salva as informações obtidas das análises em cada um automaticamente.
-
-A grosso modo, ele é executado da seguinte forma seguindo os seguintes passos:
-
-    Inicialização do ambiente virtual : source venv/bin/activate
-    Execução do arquivo : python auto.py
 
 ### Conclusão
 
