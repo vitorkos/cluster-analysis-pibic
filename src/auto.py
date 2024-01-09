@@ -1,11 +1,15 @@
 import os
+import sys
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 import csv
 
+if (sys.argv[1] == None):
+    print("Erro, insert the models path")
+
 # Define the path to the models directory
-models_path = './../models/aline_models/'
+models_path = sys.argv[1]
 
 # Iterate over each experiment directory
 for exp_dir in os.listdir(models_path):
