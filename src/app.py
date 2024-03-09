@@ -1,7 +1,7 @@
 import os
 os.sys.path
 import sys
-path_to_module = "./../venv"
+path_to_module = "Users\vitor\code\cluster-analysis-pibic\venv\Lib\site-packages"
 sys.path.append(path_to_module)
 import cv2
 import matplotlib.pyplot as plt
@@ -81,7 +81,7 @@ for exp_dir in os.listdir(models_path):
                     for i, area in enumerate(areas, start=1):
                         if area >= 3.0:
                             if i == counter:
-                                exit
+                                continue
                             else:
                                 csv_writer.writerow([f'Área do Cluster{j}', area])
                                 j = j + 1
