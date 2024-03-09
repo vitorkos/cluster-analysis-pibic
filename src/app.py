@@ -1,7 +1,7 @@
 import os
 os.sys.path
 import sys
-path_to_module = "../venv/lib/python3.11/site-packages/"
+path_to_module = "./../venv"
 sys.path.append(path_to_module)
 import cv2
 import matplotlib.pyplot as plt
@@ -77,8 +77,14 @@ for exp_dir in os.listdir(models_path):
                     csv_writer.writerow([f'{exp_dir}_{img_file[:-4]}', 'Número total de clusters'])
                     csv_writer.writerow([counter])
 
+                    j = 0
                     for i, area in enumerate(areas, start=1):
-                        csv_writer.writerow([f'Área do Cluster{i}', area])
+                        if area >= 3.0:
+                            if i == counter:
+                                exit
+                            else:
+                                csv_writer.writerow([f'Área do Cluster{j}', area])
+                                j = j + 1
 
                 # Salva a imagem binária com contornos
                 plt.imshow(cv2.cvtColor(img_bin, cv2.COLOR_BGR2RGB))
