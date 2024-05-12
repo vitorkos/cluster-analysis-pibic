@@ -2,7 +2,7 @@ import os
 os.sys.path
 import sys
 # path_to_module = "Users\vitor\code\cluster-analysis-pibic\venv\Lib\site-packages"
-path_to_module = "../venv/lib/python3.11/site-packages/"
+path_to_module = "../venv/lib/python3.12/site-packages/"
 sys.path.append(path_to_module)
 import cv2
 import matplotlib.pyplot as plt
