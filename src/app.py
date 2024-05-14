@@ -10,6 +10,9 @@ import numpy as np
 import csv
 from tkinter import filedialog, Tk
 
+min = float(input("Enter the cluster min size: "))
+max = float(input("Enter the cluster max size: "))
+
 # Define o caminho para o diretório dos modelos
 root = Tk()
 root.withdraw()  # Esconde a janela principal
@@ -80,7 +83,7 @@ for exp_dir in os.listdir(models_path):
 
                     j = 0
                     for i, area in enumerate(areas, start=1):
-                        if area >= 3.0:
+                        if area >= min and area <= max:
                             if i == counter:
                                 continue
                             else:
